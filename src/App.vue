@@ -1,14 +1,14 @@
 <template>
-  <PadreDeporte/>
+  <PadreNumero/>
 </template>
 
 <script>
-import PadreDeporte from './components/PadreDeporte.vue'
+import PadreNumero from './components/PadreNumero.vue'
 
 export default {
   name: 'App',
   components: {
-    PadreDeporte
+    PadreNumero
   }
 }
 </script>
@@ -29,6 +29,6 @@ body {
   background: repeating-linear-gradient(45deg, #92c9b1, #92c9b1 20px, #b3e0d2 20px, #b3e0d2 40px);
 }
 h1 {
-  color: crimson;
+  color: indigo;
 }
 </style>
