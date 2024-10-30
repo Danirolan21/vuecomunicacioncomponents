@@ -1,14 +1,15 @@
 <template>
-  <SeleccionMultiple/>
+  <MenuRutas/>
+  <router-view/>
 </template>
 
 <script>
-import SeleccionMultiple from './components/SeleccionMultiple.vue'
+import MenuRutas from './components/MenuRutas.vue'
 
 export default {
   name: 'App',
   components: {
-    SeleccionMultiple
+    MenuRutas
   }
 }
 </script>
@@ -25,7 +26,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding-top: 10px;
   width: 100%;
   height: 100%;
 }
