@@ -1,14 +1,14 @@
 <template>
-  <PadreNumero/>
+  <ComicsComponent/>
 </template>
 
 <script>
-import PadreNumero from './components/PadreNumero.vue'
+import ComicsComponent from './components/ComicsComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    PadreNumero
+    ComicsComponent
   }
 }
 </script>
@@ -16,6 +16,8 @@ export default {
 <style>
 body {
   margin: 0;
+  height: 100vh;
+  background: repeating-linear-gradient(45deg, #92c9b1, #92c9b1 20px, #b3e0d2 20px, #b3e0d2 40px);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -25,8 +27,7 @@ body {
   color: #2c3e50;
   padding-top: 10px;
   width: 100%;
-  height: 100vh;
-  background: repeating-linear-gradient(45deg, #92c9b1, #92c9b1 20px, #b3e0d2 20px, #b3e0d2 40px);
+  height: 100%;
 }
 h1 {
   color: indigo;
