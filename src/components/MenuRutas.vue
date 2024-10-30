@@ -16,14 +16,9 @@
                         Comics
                 </router-link>
             </li>
-            <li>
-                <router-link to="/numeroDoble">
-                        NumeroDoble
-                </router-link>
-            </li>
-            <li>
-                <router-link to="/numeroDoble/77">
-                        NumeroDoble
+            <li v-for="numero in numeros" :key="numero">
+                <router-link :to="'/numeroDoble/' + numero">
+                        NumeroDoble {{numero}}
                 </router-link>
             </li>
         </ul>
@@ -32,7 +27,12 @@
 
 <script>
     export default {
-        name: "MenuRutas"
+        name: "MenuRutas",
+        data() {
+            return {
+                numeros: [22, 14, 3]
+            }
+        }
     }
 </script>
 
