@@ -1,14 +1,14 @@
 <template>
-  <ComicsComponent/>
+  <SeleccionMultiple/>
 </template>
 
 <script>
-import ComicsComponent from './components/ComicsComponent.vue'
+import SeleccionMultiple from './components/SeleccionMultiple.vue'
 
 export default {
   name: 'App',
   components: {
-    ComicsComponent
+    SeleccionMultiple
   }
 }
 </script>
